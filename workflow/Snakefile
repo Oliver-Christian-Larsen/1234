@@ -14,6 +14,7 @@ sample_dirs = os.listdir(config['input_dir'])
 
 include: "rules/concatenate_fastq.smk"
 include: "rules/map2db.smk"
+include: "workflow/scripts/Math"
 
 rule all:
   input:
